@@ -3,12 +3,12 @@ session_start();
 
 /** Aici completati cu datele dv. **/
 
-$to = 'adresa_dv@de.mail';      // Adresa de e-mail la care va fi trimis mesajul
+$to = 'florin5231@gmail.com';      // Adresa de e-mail la care va fi trimis mesajul
 
 // Daca doriti sa folositi serverul SMTP de la GMail, dati la $gmail valoarea 1 
 // Adaugati la $gmail_user adresa dv. de GMail (care va fi folosita pt. server SMTP) si parola ei la $gmail_pass
 // Daca doriti sa folositi serverul pt. mail unde este incarcat acest script, lasati $gmail=0, iar $gmail_user si $gmail_pass cum e
-$gmail = 0;
+$gmail = 1;
 $gmail_user = 'contul_dv@gmail.com';
 $gmail_pass = 'parola_gmail';
 
