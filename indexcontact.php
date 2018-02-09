@@ -1,6 +1,6 @@
 <form method="POST" action="/contact/mail.php">
 	<div align="center">
-		<font size="2" color="red" face="Verdana, Arial, Helvetica, sans-serif"><strong>V„ rug„m s„ completati toate c‚mpurile !</strong></font><br /><br /><br />
+		<font size="2" color="red" face="Verdana, Arial, Helvetica, sans-serif"><strong>V√£ rug√£m s√£ completati toate c√¢mpurile !</strong></font><br /><br /><br />
 		<font size="2" face="Verdana, Arial, Helvetica, sans-serif">
 			Adresa dvs. de e-mail <font color="#FF0000"><i>(obligatoriu)</i></font>:<br />
 			<input type="text" name="Email" size="42"><br /><br />
@@ -14,7 +14,7 @@
 			<input type="text" name="Telefon" size="42"><br /><br />
 		</font>
 		<font size="2" face="Verdana, Arial, Helvetica, sans-serif">
-			Mesajul dumneavoastr„:<br />
+			Mesajul dumneavoastr√£:<br />
 			<textarea name="Comentarii" rows="6" cols="50"></textarea><br /><br />
 			<br />
 			<input type="submit" name="submit" value="Trimite">
