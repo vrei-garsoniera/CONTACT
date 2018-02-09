@@ -43,3 +43,25 @@ if(isset($_POST['anti_spam']) && !empty($_POST['anti_spam']) && isset($_POST['an
   }
   else {
     $from = 'From: '. $email;
+    // Apeleaza functia PHP mail(), daca trimite cu succes seteaza $send='trimis', altfel defineste 'Eroare:'
+    if(mail($to, $subiect, $body, $from))  $send = 'trimis';
+    else $send = 'Eroare: Serverul nu a putut expedia mesajul prin e-mail';
+  }
+
+  // Daca mesajul a fost trimis ( $send e setat 'trimis';), afiseaza mesaj de confirmare
+  // Altfel, returneaza eroarea
+    if($send=='trimis'){
+    // Seteaza o sesiune prin care se blocheaza re-trimiterea mesajului la un eventual refresh sau mai curand de 5 minute
+    $_SESSION['limit_contact'] = time();
+
+      $re = '<p>Stimate/a <b>'.$nume.'</b>, mesajul dv. a fost trimis cu succes, veti primi raspuns cat mai curand.</p>
+      <p>Va multumim pentru interesul acordat.</p>
+            <p>Daca doriti, vizitati: <a href="http://marplo.net">MarPlo.net</a></p>';
+    }
+    else $re = $send;
+  }
+  else $re = 'Eroare: Campuri de formular netransmise.';
+}
+else $re = 'Eroare: Cod de verificare incorect';
+
+echo $re;
