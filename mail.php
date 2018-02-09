@@ -22,8 +22,8 @@ if (!$validationOK) {
   print "	<meta http-equiv=\"refresh\" content=\"3;URL=/contact/contact.html\">
 			<div align=\"center\">
 				<font size=\"6\" color=\"#FF0000\" face=\"Verdana, Arial, Helvetica, sans-serif\"><strong>Eroare!</strong></font><br /><br />
-				<font size=\"6\" color=\"#FF0000\" face=\"Verdana, Arial, Helvetica, sans-serif\"><strong>(adres„ e-mail incorect„)</strong></font><br /><br />
-				<font size=\"6\" color=\"#FF0000\" face=\"Verdana, Arial, Helvetica, sans-serif\"><strong><a href=\"/contact/contact.html\">ReÓncercati!</a></strong></font><br /><br />
+				<font size=\"6\" color=\"#FF0000\" face=\"Verdana, Arial, Helvetica, sans-serif\"><strong>(adres√£ e-mail incorect√£)</strong></font><br /><br />
+				<font size=\"6\" color=\"#FF0000\" face=\"Verdana, Arial, Helvetica, sans-serif\"><strong><a href=\"/contact/contact.html\">Re√Æncercati!</a></strong></font><br /><br />
 			</div>
   ";
   exit;
@@ -49,7 +49,7 @@ if ($success){
   print "	<meta http-equiv=\"refresh\" content=\"3;URL=/contact/contact.html\">
 			<div align=\"center\"><br /><br /><br /><br />
 				<font size=\"6\" color=\"#666666\" face=\"Verdana, Arial, Helvetica, sans-serif\"><strong>Mesajul a fost trimis !</strong></font><br /><br />
-				<font size=\"6\" color=\"red\" face=\"Verdana, Arial, Helvetica, sans-serif\"><strong>V„ multumim !</strong></font><br /><br />
+				<font size=\"6\" color=\"red\" face=\"Verdana, Arial, Helvetica, sans-serif\"><strong>V√£ multumim !</strong></font><br /><br />
 			</div>
   ";
 }
@@ -57,8 +57,8 @@ else{
   print "	<meta http-equiv=\"refresh\" content=\"3;URL=/contact/contact.html\">
 			<div align=\"center\">
 				<font size=\"6\" color=\"#FF0000\" face=\"Verdana, Arial, Helvetica, sans-serif\"><strong>Eroare!</strong></font><br /><br />
-				<font size=\"6\" color=\"#FF0000\" face=\"Verdana, Arial, Helvetica, sans-serif\"><strong>(adres„ e-mail incorect„)</strong></font><br /><br />
-				<font size=\"6\" color=\"#FF0000\" face=\"Verdana, Arial, Helvetica, sans-serif\"><strong><a href=\"/contact/contact.html\">ReÓncercati!</a></strong></font><br /><br />
+				<font size=\"6\" color=\"#FF0000\" face=\"Verdana, Arial, Helvetica, sans-serif\"><strong>(adres√£ e-mail incorect√£)</strong></font><br /><br />
+				<font size=\"6\" color=\"#FF0000\" face=\"Verdana, Arial, Helvetica, sans-serif\"><strong><a href=\"/contact/contact.html\">Re√Æncercati!</a></strong></font><br /><br />
 			</div>
   ";
 }
