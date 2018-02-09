@@ -473,5 +473,22 @@ function showSlides() {
     setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
 </script>
+<!--script pentru mail-->
+<form style="width:350px; background:#e8e8fe; text-align:center;" name="mailer" method="post"  onsubmit="return Validate()" action="contact_mail.php">
+ <h3 id="fc_titlu"><u>Trimiteti mesaj</u></h3>
+ Numele dv.: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <input type="text" name="nume" id="nume" size="18" maxlength="40" /><br />
+ Adresa dv. de e-mail: <input type="text" name="email" id="email" size="18" maxlength="58" /><br />
+ Subiect: &nbsp; &nbsp; &nbsp; <input type="text" name="subiect" id="subiect" size="28" maxlength="70" /><br />
+ Scrieti mesajul: (<i>maxim 500 caractere</i>)<br />
+  <textarea name="mesaj" id="mesaj" cols="35" rows="6"></textarea>
+  <input type="hidden" name="anti_spam" value="" />
+  <div id="div_as" style="display:none;">
+   <i>Adaugati urmatorul cod:</i> <b id="codas"> </b><br />
+   Verificare: <input type="text" name="anti_spam1" value="" size="7" maxlength="7" />
+  </div>
+  <input type="submit" value="Trimite" id="submit" />
+</form>
+<script type="text/javascript" src="contact.js"> </script>
+
 </body>
 </html>
