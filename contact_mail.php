@@ -9,8 +9,8 @@ $to = 'florin5231@gmail.com';      // Adresa de e-mail la care va fi trimis mesa
 // Adaugati la $gmail_user adresa dv. de GMail (care va fi folosita pt. server SMTP) si parola ei la $gmail_pass
 // Daca doriti sa folositi serverul pt. mail unde este incarcat acest script, lasati $gmail=0, iar $gmail_user si $gmail_pass cum e
 $gmail = 1;
-$gmail_user = 'contul_dv@gmail.com';
-$gmail_pass = 'parola_gmail';
+$gmail_user = 'florin5231';
+$gmail_pass = 'florin1234';
 
 
 /** In continuare nu e nevoie sa modificati **/
@@ -56,7 +56,7 @@ if(isset($_POST['anti_spam']) && !empty($_POST['anti_spam']) && isset($_POST['an
 
       $re = '<p>Stimate/a <b>'.$nume.'</b>, mesajul dv. a fost trimis cu succes, veti primi raspuns cat mai curand.</p>
       <p>Va multumim pentru interesul acordat.</p>
-            <p>Daca doriti, vizitati: <a href="http://marplo.net">MarPlo.net</a></p>';
+            <p>Daca doriti, vizitati: <a href="http://vrei-garsoniera.github.io/SITUL1">vrei-garsoniera in BRAILA</a></p>';
     }
     else $re = $send;
   }
