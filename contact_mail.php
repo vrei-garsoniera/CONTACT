@@ -8,9 +8,9 @@ $to = 'florin5231@gmail.com';      // Adresa de e-mail la care va fi trimis mesa
 // Daca doriti sa folositi serverul SMTP de la GMail, dati la $gmail valoarea 1 
 // Adaugati la $gmail_user adresa dv. de GMail (care va fi folosita pt. server SMTP) si parola ei la $gmail_pass
 // Daca doriti sa folositi serverul pt. mail unde este incarcat acest script, lasati $gmail=0, iar $gmail_user si $gmail_pass cum e
-$gmail = 1;
-$gmail_user = 'florin5231';
-$gmail_pass = 'florin1234';
+$gmail = 0;
+$gmail_user = '#';
+$gmail_pass = '#';
 
 
 /** In continuare nu e nevoie sa modificati **/
