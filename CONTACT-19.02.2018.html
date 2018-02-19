@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2018 by chirovan5231 (http://jsbin.com/moximaf/1/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html>
+<head>
+<meta name="description" content="[CONTACT -19.02.2018  ]">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+<style id="jsbin-css">
+/* ==== A SIMPLE CSS RESET FROM ERIC MEYER ==== */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ==== HELPER COLORS FOR LAYOUT ==== */
+
+/*.main-header {
+  background-color: rgba(255, 248, 53, .3);
+}
+
+.primary-content {
+  background-color: rgba(140, 96, 255, .3);
+}
+
+.post {
+  background-color: rgba(255, 0, 0, .3);
+}*/
+
+/* ==== BASE STYLES ==== */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+  font-family: Merriweather, 'Times New Roman', serif;
+  font-size: 1.125rem;
+  line-height: 2rem;
+  color: #333;
+}
+
+h1,
+h2 {
+  font-family: 'Open Sans', Arial, sans-serif;
+}
+
+h1 {
+	font-size: 1.8rem;
+}
+
+h2 {
+	font-size: 1.6rem;
+	color: #e5127d;
+}
+
+.main-header p {
+	font-size: 1.125rem;
+	letter-spacing: 0.125rem;
+	color: #8c8e9b;
+}
+
+a {
+	color: #e5127d;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #b60e63;
+}
+
+/* ==== LAYOUT STYLES ==== */
+
+h1,h2,h3,h4,h5,h6,hgroup,
+ul,ol,dd,
+p,figure, img,
+pre,table,fieldset,hr,
+.main-header, .primary-content {
+    margin-bottom: 1rem;
+}
+
+/* Main Header Styles */
+.main-header {
+	text-align: center;
+	padding: 1.25rem;
+	color: #fff;
+	background-color: #42444e;
+}
+/*antetul să fie afișat în partea stângă, să ocupe o treime din ecran și să stea
+pe loc când derulăm în jos pe pagină LAYOTUL PENTRU TABLETA */
+@media (min-width: 768px) {
+
+			.main-header {
+					position: fixed;
+					top: 0;
+					height: 100%;
+					width: 33.3%;
+				}
+
+		}
+	
+/* Primary Content Wrapper Styles */
+
+@media (min-width: 768px) {
+
+	.primary-content {
+		float: right;
+		width: 66.6%;
+		max-width: 812px;
+	}
+
+  /*LAYOTUL PENTRU DESKTOP */
+  @media (min-width: 1025px) {
+
+	.main-header {
+		width: 25.625%;
+	}
+
+}
+  @media (min-width: 1025px) {
+
+	.primary-content {
+	float: none;
+	position: absolute;
+        left: 25.625%;
+			}
+
+		}
+	
+  
+  
+  }
+  
+@media (min-width: 48rem) {
+	.primary-content {
+		float: right;
+		width: 10.6%;
+		max-width: 812px;
+	}
+
+}
+
+
+@media (min-width: 20rem) {
+
+  .body {
+    display: inline-block;
+    border-bottom: none;
+    width: 7.5rem;
+  }}
+ @media (min-width: 30rem) {
+
+  .body {
+    display: inline-block;
+    border-bottom: none;
+    width: 7.5rem;
+  }}
+@media (min-width: 62rem) {
+
+  .body {
+    display: inline-block;
+    border-bottom: none;
+    width: 7.5rem;
+  }}
+
+@media (min-width: 64rem) {
+
+	.body {
+		float: none;
+		position: absolute;
+        left: 20.625%;
+	}
+
+}
+ @media (min-width: 75rem) {
+
+  .body {
+    display: inline-block;
+    border-bottom: none;
+    width: 7.5rem;
+  }}
+
+ 
+ 
+
+/* ==== COMPONENT STYLES ==== */
+
+.button {
+	display: inline-block;
+	border: 1px solid #8c8e9b;
+	color: #8c8e9b;
+	border-radius: 10px;
+	padding-right: 5px;
+	padding-left: 5px;
+	margin: 5px;
+	width: 100px;
+	font-family: 'Open Sans', sans-serif;
+}
+ 
+@media (în cazul în care condiția este adevărată) {
+
+	aplică aceste stiluri
+
+}
+.button:hover {
+	border: 1px solid #b60e63;
+}
+
+.load {
+	display: block;
+	text-align: center;
+	padding: 0.625rem;
+	font-size: 1.25rem;
+	color: #8c8e9b;
+	cursor: pointer;
+}
+/* Base Styles */
+
+		aside,
+		section {
+			margin-right: 1.096%;
+		}
+
+		.container {
+			width: 95vw;
+			height: 50.13vh;
+			padding: 1.096%;
+		}
+
+		aside {
+			width: 33.3%;
+			height: 100%;
+			float: left;
+		}
+
+		section {
+			width: 33.3%;
+			height: 100%;
+			float: left;
+		}
+
+		@media (max-width: 420px) {
+
+			/* Demonstrational Styles */
+
+			aside,
+			section {
+				height: 48%;
+				margin-bottom: 1.096%;
+			}
+
+			/* Layout Styles */
+
+			aside,
+			section {
+				float: none;
+				width: auto;
+			}
+
+		}
+	
+
+
+
+                          /*--patratele--*/
+
+#dateContact {
+  width: 400px;
+  height: 450px;
+    margin: 50 auto;
+  box-shadow: 15px 15px 40px magenta;
+   margin-right: 30px;
+   margin-top: 80px;
+   margin-bottom:80px;
+}
+/*se lasa spatiu probabil -rectifica apoi informatia -FRATE */
+
+ 
+.orange {
+  background-color: orange;
+}
+.linear-gradient {
+  background: linear-gradient(to right,
+      red, orange, yellow, green, blue, indigo, violet);
+}
+
+/*se muta la dreapta Patratul ROSU sau un patrat */
+.right {
+  float: right;
+}
+.left {
+  float: left;
+}
+
+p {text-align: bottom;
+  padding: 5rem;
+  font-family: 'Arial', sans-serif;
+  font-size: 1.5rem;
+  padding: 0 .625rem;
+  color: rgba(255,10,17,.9);
+  text-align: center;
+}
+p2{
+   text-align: center;
+}
+h1,h2 {text-align: center;
+color: rgba(200,0,255,.9);
+}
+ /* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* Slideshow container */
+.slideshow-container {
+  width:233px;
+  align-content: center; 
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+p1{ 
+  padding: 5rem;
+  font-family: 'Arial', sans-serif;
+  font-size: 1.0rem;
+  padding: 0 .625rem;
+  color: rgba(255,10,17,.9);
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<!--CONTOR VIZITATORI-->
+ 
+<script id="_waun16">var _wau = _wau || []; _wau.push(["tab", "60l9mbq2ss", "n16", "left-middle"]);</script><script async src="https://waust.at/t.js"></script>  
+
+<header class="main-header">
+    <h1>DATE DE CONTACT</h1>
+		<p> Atunci cand numarul de telefon se  afiseaza   o garsoniera este disponibila pentru inchiriere.  </p>
+<p> Observati  caseta NEWS </p> 
+                <p>mail: florin5231@gmail.com</p>
+		<a href="https://vrei-garsoniera.github.io/SITUL1/" class="button">HOME</a>
+		<a href="https://vrei-garsoniera.github.io/MANUALE/" class="button">MANUALE</a>
+                <p> Accesul la  manuale   se poate face doar cu parola de pe Desktop sau Laptop.</p>
+  </header>
+
+ 
+
+<div id="dateContact" class="right orange">
+ <h1> CONTACT <h1>
+<p>  Pot fi contactat  la adresa de mail  : florin5231@gmail.com 
+</p>
+<h2> TELEFON:+00+000+000+00</h2>
+<p> Telefonul este valabil doar atunci cand  avem o garsoniera disponibila pentru vizionare si inchiriere. </p>
+     </div>
+
+
+<div id="dateContact" class="right orange">
+  <h2>  NEWS  </h2> 
+ 
+<marquee bgcolor="GoldenRod ">Nu sunt garsoniere disponibile pentru inchiriat-momentan. Va rugam reveniti pe sit  caci, ocazional, pot apare modificari!Multumim!</marquee> 
+<h2> Incepand cu luna iulie 2018 va fi <stron> DISPONIBILA </strong> o garsoniera pentru inchiriere </p>
+ </div>
+<div id="dateContact" class="right orange">
+  <h2>  Vremea la Braila   </h2> 
+<!--VREMEA LA BRAILA /sau alt oras TREBUIE SA INTRU PE SITUL ORIGINAL  -->
+
+<iframe src="https://meteo.ournet.ro/widget2/widget_frame?color=68a7d4&itemcolor=&textcolor=&pos=h&days=3&w=150&header=true&id=683902" scrolling="no" frameborder="0" style="border:none;overflow:hidden;height:260px;width:400px;" allowTransparency="true"></iframe>
+<noscript><a href="http://meteo.ournet.ro">Ournet.ro</a></noscript> 
+ </div>
+
+<div id="dateContact" class="right orange">
+  
+  <!-- Slideshow container -->
+<div class="slideshow-container">
+<p1>    Alte fotografii din garsoniere</p1>
+  <!-- slide patrat nr 2 -->
+
+  <div class="mySlides fade">
+    
+    <img src="https://i.imgur.com/EsTlZfA.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+   
+    <img src="https://i.imgur.com/Sl4ZYHK.jpg" style="width:100%">
+    
+  </div>
+
+  <div class="mySlides fade">
+    
+     <img src="https://i.imgur.com/nwKOBpb.jpg" style="width:100%">
+   </div> 
+  
+</div>
+
+       
+ 
+
+<script id="jsbin-javascript">
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none"; 
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1} 
+    slides[slideIndex-1].style.display = "block"; 
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+
+
+</script>
+</body>
+</html>
